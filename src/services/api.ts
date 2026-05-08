@@ -1,7 +1,8 @@
 import type { Car } from "../types";
 
-const REMOTE_BRAND_URL = "https://wswork.com.br/cars_by_brand.json";
-const REMOTE_CARS_URL = "https://wswork.com.br/cars.json";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+const REMOTE_BRAND_URL = `${API_BASE_URL}/cars_by_brand.json`;
+const REMOTE_CARS_URL = `${API_BASE_URL}/cars.json`;
 const LOCAL_BRAND_URL = "/cars_by_brand.json";
 const LOCAL_CARS_URL = "/cars.json";
 
